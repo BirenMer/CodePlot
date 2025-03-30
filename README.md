@@ -5,7 +5,7 @@ Open-source tool for visualizing code file connections
 ### Currently Supports Python Lang.
 
 ### Docs:
-Currenlty the tool is desing to display the function names present in a file, create cluster of function for each files and also the navigation bar contains file names and when clicked it provides a dropdown of the functions present within.
+Currenlty the tool is desing to display the function names present in a file, create cluster of function for each files and also the navigation bar contains file names and when clicked it provides a dropdown of the functions present within. Provides with a CodePlot.html file. 
 
 ### Upcoming Features:
 * Support for other languages like Go Lang, C++, Node Js, Etc.
