@@ -36,7 +36,7 @@ class CodePlot:
         return calls
     def process_directory(self, directory):
         """Recursively process all Python files in a directory, ignoring specific folders."""
-        ignored_folders = {"venv", "node_modules","cogpy","python","_internal",""}  # Ignore common environment directories
+        ignored_folders = {"venv"}  # Ignore common environment directories
         for root, dirs, files in os.walk(directory):
             dirs[:] = [d for d in dirs if d not in ignored_folders]  # Modify dirs in-place to skip ignored folders
             for file in files:
