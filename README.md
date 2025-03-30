@@ -25,4 +25,5 @@ And in a few moments you should see a html file opened in your browser with the 
 * Connect navigation bar elemetns and nodes to enable on click focus directly from the navigation bar in the UI.
 
 ### CodePlot Demo:
-[CodePlotDemo.webm](https://github.com/user-attachments/assets/a0ee4596-f5f0-4538-acfc-8d73a3432a17)
+[CodePlot.webm](https://github.com/user-attachments/assets/e2a9134d-bcf8-4e81-b883-579751f38cf2)
+
