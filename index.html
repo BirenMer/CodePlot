@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Plot</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <h1>Code Plot</h1> -->
+            <h1 class="title-heading">
+                <img src="assets/codeplot.png" alt="Icon" class="title-icon" />
+                Code Plot
+              </h1>
+              
+            <div class="input-section">
+                <div class="input-group">
+                    <input type="text" id="repoUrl" placeholder="GitHub repository URL" />
+                    <button onclick="loadFromGitHub()">Load Repository</button>
+                </div>
+                <div class="input-group">
+                    <label>Or upload folder:</label>
+                    <input type="file" id="folderInput" webkitdirectory multiple />
+                    <button onclick="loadFromFiles()">Analyze Files</button>
+                </div>
+                <button onclick="generateSampleData()">Try Sample Project</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar" id="sidebar">
+                <h3>Project Structure</h3>
+                <ul class="file-tree" id="fileTree"></ul>
+            </div>
+
+            <div class="visualization-area">
+                <svg class="viz-svg" id="vizSvg"></svg>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Zoom</label>
+                        <input type="range" id="zoomSlider" min="0.1" max="3" step="0.1" value="1" />
+                    </div>
+                    <div class="control-group">
+                        <label>Force Strength</label>
+                        <input type="range" id="forceSlider" min="10" max="500" step="10" value="100" />
+                    </div>
+                    <div class="control-group">
+                        <button onclick="resetView()">Reset View</button>
+                    </div>
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #3b82f6;"></div>
+                        <span>Files</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #10b981;"></div>
+                        <span>Functions</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #f59e0b;"></div>
+                        <span>Folders</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ef4444;"></div>
+                        <span>Dependencies</span>
+                    </div>
+                </div>
+
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <div>Analyzing code structure...</div>
+                </div>
+            </div>
+
+            <div class="tooltip" id="tooltip"></div>
+        </div>
+    </div>
+
+  <!-- Your HTML structure here -->
+  <script src="js/main.js"></script>
+</body>
+</html>
