@@ -1,23 +1,14 @@
 # CodePlot
 Open-source tool for visualizing code file connections 
-(The idea behind this is to simplify debugging by visualizing code).
+(The idea behind this is to simplify debugging by visualizing code flow).
 
-### Currently Supports Python Lang.
-
-### Docs:
-Currenlty the tool is desing to display the function names present in a file, create cluster of function for each files and also the navigation bar contains file names and when clicked it provides a dropdown of the functions present within. Provides with a `CodePlot.html` file. 
-#### Getting Started :
-Steps:
-1. Create a Virtual Env.
--> `python3 -m venv venv_name`
-2. Install the dependencies.
--> `pip install -r requirements.txt`
-3. Open the project file and change the directory_path to your project dir.
-4. Run the python3 file
--> `python3 CodePlot.py`
+#### Steps on getting started :
+1. Clone the repo
+2. Open the index.html file in your browser.
+3. Click on Try the sample project.
+4. OR upload your folder and click on Analyze Files.
    
-And in a few moments you should see a html file opened in your browser with the code plotted.
-
+and in few moments you should see a graph in you code plot window. 
 ### Upcoming Features:
 * Support for other languages like Go Lang, C++, Node Js, Etc.
 * API support.
@@ -25,5 +16,4 @@ And in a few moments you should see a html file opened in your browser with the 
 * Connect navigation bar elemetns and nodes to enable on click focus directly from the navigation bar in the UI.
 
 ### CodePlot Demo:
-[CodePlot.webm](https://github.com/user-attachments/assets/e2a9134d-bcf8-4e81-b883-579751f38cf2)
-
+[CodePlotV2.0.webm](https://github.com/user-attachments/assets/77944e47-68b9-4317-922a-534a1f25039d)
